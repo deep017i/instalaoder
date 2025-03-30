@@ -24,6 +24,7 @@ async def get_fsub(client, message):
         except RPCError:
             not_joined.append(channel_id)
     
+    # If no channels are left to join, return True
     if not not_joined:
         return True
     
@@ -41,17 +42,20 @@ async def get_fsub(client, message):
     # Separate "Try Again" button
     try_again_button = InlineKeyboardButton("🔄 Try Again", url=f"https://t.me/{dy.username}?start=start")
     
-    # Add the "Try Again" button at the end of the list
+    # Now we add the "Try Again" button at the end, but **only once**
     buttons.append(try_again_button)
     
-    # Group buttons into rows, with "Try Again" always on its own row
+    # Group buttons into rows (2 buttons per row) and make sure the "Try Again" button is in its own row.
     formatted_buttons = [buttons[i:i + 2] for i in range(0, len(buttons) - 1, 2)]  # Group channel buttons in pairs
-    formatted_buttons.append([buttons[-1]])  # Always place "Try Again" in a new row
     
+    # Ensure "Try Again" is always placed in a separate row
+    formatted_buttons.append([buttons[-1]])  # Add "Try Again" in its own row
+
     await message.reply(txt.FORCE_SUBSCRIBE_TEXT.format(message.from_user.mention),
                         reply_markup=InlineKeyboardMarkup(formatted_buttons))
     
     return False
+
 
 
 # async def get_fsub(client, message):
