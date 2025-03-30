@@ -68,7 +68,6 @@ async def get_fsub(client, message):
             buttons.append(InlineKeyboardButton(f"🔰 Channel {index} 🔰", url=channel_link))
         except Exception as e:
             print(f"Error fetching channel data: {e}")
-    bot_username = bot.username
     try_again_button = InlineKeyboardButton("🔄 Try Again", url=f"https://t.me/{dy.username}?start=start")
     buttons.append(try_again_button)
 
