@@ -17,3 +17,5 @@ DB_NAME = os.getenv("DB_NAME", "instalaoder")
 
 IS_FSUB = bool(os.environ.get("FSUB", True)) # Set "True" For Enable Force Subscribe
 AUTH_CHANNEL = int(os.environ.get("AUTH_CHANNEL", "-1002421861644"))
+
+REEL_AUTO_DELETE = int(os.getenv("REEL_AUTO_DELETE", "600")) #10min
