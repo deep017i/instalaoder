@@ -1,5 +1,4 @@
-#The repo is fully coded and modified by @Dypixx..
-#Please do not sell or remove credits.
+# © Coded by @Dypixx
 
 class txt(object):
   START_TXT = """<b>Hᴇʏ, {}!
@@ -20,7 +19,7 @@ Fᴏʀ ᴍᴏʀᴇ ɪɴғᴏ, ᴄʟɪᴄᴋ ᴏɴ ʜᴇʟᴘ ✅
 Lɪʙʀᴀʀʏ: Pʏʀᴏɢʀᴀᴍ 📚
 Lᴀɴɢᴜᴀɢᴇ: Pʏᴛʜᴏɴ 🐍
 Sᴇʀᴠᴇʀ: Rᴇɴᴅᴇʀ 🌐
-Bᴜɪʟᴅ Sᴛᴀᴛᴜs: V1.3 🚀
+Bᴜɪʟᴅ Sᴛᴀᴛᴜs: V1.4 🚀
 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ: Aᴠᴀɪʟᴀʙʟᴇ (Fʀᴇᴇ) 💻 
 
 <blockquote>𝖬𝖺𝖽𝖾 𝖡𝗒 @Dypixx</blockquote></b>"""
@@ -32,3 +31,13 @@ Jᴜsᴛ sᴇɴᴅ ᴛʜᴇ ʀᴇᴇʟ ᴏʀ ᴘᴏsᴛ ʟɪɴᴋ, ᴀɴᴅ ᴛ�
 Aғᴛᴇʀ ᴛʜᴀᴛ ᴘʀᴏᴄᴇss, ᴛʜᴇ ʙᴏᴛ ᴡɪʟʟ ɢɪᴠᴇ ʏᴏᴜ ᴀ ғʟᴏᴏᴅ ᴡᴀʀɴɪɴɢ. Yᴏᴜ sʜᴏᴜʟᴅ ᴡᴀɪᴛ ғᴏʀ 5 ᴍɪɴᴜᴛᴇs; ᴀғᴛᴇʀ 5 ᴍɪɴᴜᴛᴇs, ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴛʜɪs ʙᴏᴛ ᴀɢᴀɪɴ. 
 
 <blockquote>Iғ ᴀɴʏ ɪssᴜᴇs ᴄᴏᴍᴇ ᴜᴘ, ᴄᴏɴᴛᴀᴄᴛ @Dypixx</blockquote></b>"""
+
+
+"""
+This code is created and owned by @Dypixx. Do not remove or modify the credit.
+
+Removing the credit does not make you a developer; it only shows a lack of respect for real developers.
+  
+Respect the work. Keep the credit.
+
+"""
