@@ -14,8 +14,6 @@ async def callback_query_handler(client, query: CallbackQuery):
                 [InlineKeyboardButton("🧑‍💻 Developer", user_id=int(ADMIN))],
                 [InlineKeyboardButton("⬅️ Back", callback_data="back"), InlineKeyboardButton("📚 About", callback_data="about")]
             ]))
-
-    
     elif query.data == "about":
         await query.message.edit_text(
             txt.ABOUT_TXT, 
@@ -23,8 +21,6 @@ async def callback_query_handler(client, query: CallbackQuery):
                 [[InlineKeyboardButton('⚡ Help', callback_data='help')],[
                     InlineKeyboardButton('🤖 Source Code', url="https://github.com/Dypixx/Instaloader"),
                     InlineKeyboardButton('⬅️ Back', callback_data='back')]]))
-
-    
     elif query.data == "back":
         await query.message.edit_text(
             txt.START_TXT.format(query.from_user.mention),
@@ -32,7 +28,6 @@ async def callback_query_handler(client, query: CallbackQuery):
                 [InlineKeyboardButton("🎭 Updates 🎭", url="https://telegram.me/DypixxTech")],
                 [InlineKeyboardButton("⚡ Help", callback_data="help"), InlineKeyboardButton("📚 About", callback_data="about")],
                 [InlineKeyboardButton("🧑‍💻 Developer", user_id=int(ADMIN))]]))
-    
     elif query.data == "close":
         await query.answer("Tʜᴀɴᴋs ғᴏʀ ᴄʟᴏsɪɴɢ ❤️", show_alert=True)
         await query.message.delete()
@@ -42,6 +37,6 @@ This code is created and owned by @Dypixx. Do not remove or modify the credit.
 
 Removing the credit does not make you a developer; it only shows a lack of respect for real developers.
   
-Respect the work. Keep the credit.
+Respect the work. Keep the credit. 
 
 """
