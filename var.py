@@ -16,4 +16,4 @@ DB_URI = os.getenv("DB_URI", "mongodb+srv://starcinebot:mkooaa@werdeveloper.vxfa
 DB_NAME = os.getenv("DB_NAME", "instalaoder")
 
 IS_FSUB = bool(os.environ.get("FSUB", True)) # Set "True" For Enable Force Subscribe
-AUTH_CHANNEL = os.environ.get("AUTH_CHANNEL", "-1002421861644")
+AUTH_CHANNEL = int(os.environ.get("AUTH_CHANNEL", "-1002421861644"))
