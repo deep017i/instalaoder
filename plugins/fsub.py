@@ -2,11 +2,11 @@
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from var import AUTH_CHANNEL
-from pyrogram import client
+from pyrogram import Client, Message
 from typing import List
 from pyrogram.errors import UserNotParticipant
 
-async def get_fsub(bot: client, message) -> bool:
+async def get_fsub(bot: Client, message: Message) -> bool:
     dy = await bot.get_me()
     target_channel_id = AUTH_CHANNEL
     user_id = message.from_user.id
