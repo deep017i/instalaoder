@@ -38,7 +38,7 @@ async def callback_query_handler(client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("🎭 Updates 🎭", url="https://telegram.me/DypixxTech")],
                 [InlineKeyboardButton("⚡ Help", callback_data="help"), InlineKeyboardButton("📚 About", url="about")],
-                [InlineKeyboardButton("🧑‍💻 Developer", user_id=int(ADMIN))]])))
+                [InlineKeyboardButton("🧑‍💻 Developer", user_id=int(ADMIN))]]))
     
     elif query.data == "close":
         await query.answer("Tʜᴀɴᴋs ғᴏʀ ᴄʟᴏsɪɴɢ ❤️", show_alert=True)
