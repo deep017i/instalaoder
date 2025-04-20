@@ -52,7 +52,7 @@ async def download_instagram_content(client, message):
     else:
         await P.edit("**⚠️ Uɴᴀʙʟᴇ ᴛᴏ ғᴇᴛᴄʜ ᴍᴇᴅɪᴀ.\nPʟᴇᴀsᴇ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ..**")
 
-@Client.on_message(filters.command("insta") & filters.text)
+@Client.on_message(filters.command("insta"))
 async def download_instagram_content(client, message):
     if message.chat.type not in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:return await message.reply("**⚠️ Use this command in a group.**")
     if len(message.command) < 2:return await message.reply("**🔗 Provide an Instagram link.**\nExample: `/insta <link>`", quote=True)
