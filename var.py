@@ -5,7 +5,7 @@ import os
 
 API_ID = os.getenv("API_ID", "22532891")
 API_HASH = os.getenv("API_HASH", "f2b6b1f0570fe18c8213e64c477a81d2")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "7945042409:AAH5DenGtrLsrrfEjPzyQQju_UARa2ubrOY")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "7784529867:AAGm_r84wxjk83MQXqg3PRoAwJk5QUmoLdY")
 ADMIN = int(os.getenv("ADMIN", "1782834874"))
 
 CHNL_LINK = os.getenv("CHNL_LINK", "https://t.me/DypixxTech")
