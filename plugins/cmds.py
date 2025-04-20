@@ -22,7 +22,7 @@ async def start_cmd(client, message):
     await message.reply_text(txt.START_TXT.format(message.from_user.mention),
                              reply_markup=InlineKeyboardMarkup([
                                  [InlineKeyboardButton("🎭 Updates 🎭", url="https://telegram.me/DypixxTech")],
-                                 [InlineKeyboardButton("⚡ Help", callback_data="help"), InlineKeyboardButton("📚 About", url="about")],
+                                 [InlineKeyboardButton("⚡ Help", callback_data="help"), InlineKeyboardButton("📚 About", callback_data="about")],
                                  [InlineKeyboardButton("🧑‍💻 Developer", user_id=int(ADMIN))]]))
 
 @Client.on_message(filters.command("broadcast") & (filters.private) & filters.user(ADMIN))
