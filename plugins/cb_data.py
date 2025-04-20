@@ -1,5 +1,4 @@
-#The repo is fully coded and modified by @Dypixx.
-#Please do not sell or remove credits.
+# © Coded by @Dypixx
 
 from pyrogram import Client
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
@@ -54,3 +53,12 @@ async def callback_query_handler(client, query: CallbackQuery):
     elif query.data == "close":
         await query.answer("Tʜᴀɴᴋs ғᴏʀ ᴄʟᴏsɪɴɢ ❤️", show_alert=True)
         await query.message.delete()
+
+"""
+This code is created and owned by @Dypixx. Do not remove or modify the credit.
+
+Removing the credit does not make you a developer; it only shows a lack of respect for real developers.
+  
+Respect the work. Keep the credit.
+
+"""

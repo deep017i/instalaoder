@@ -1,5 +1,4 @@
-#The repo is fully coded and modified by @Dypixx.
-#Please do not sell or remove credits.
+# © Coded by @Dypixx
 
 from pyrogram import Client, filters
 from pyrogram.errors import *
@@ -113,8 +112,18 @@ async def unban_user_cmd(client: Client, message: Message):
 async def total_users(client, message):
     try:
         users = await dy.get_all_users()
-        await message.reply(f"👥 **Total Users:** `{len(users)}`",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭 Close", callback_data="close")]]))
+        active_today = await dy.get_active_users_today()
+        await message.reply(f"📊 **Bot Statistics**\n\n👥 **Total Users:** `{len(users)}`\n✅ **Active Today:** {active_today}\n📈 **Active Rate:** {(active_today/len(users)*100):.1f}%",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭 Close", callback_data="close")]]))
     except Exception as e:
         r=await message.reply(f"❌ *Error:* `{str(e)}`")
         await asyncio.sleep(30)
         await r.delete()
+
+"""
+This code is created and owned by @Dypixx. Do not remove or modify the credit.
+
+Removing the credit does not make you a developer; it only shows a lack of respect for real developers.
+  
+Respect the work. Keep the credit.
+
+"""
