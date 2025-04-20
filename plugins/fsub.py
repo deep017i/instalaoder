@@ -2,7 +2,8 @@
 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from var import AUTH_CHANNEL
-from pyrogram import Client, Message
+from pyrogram import Client
+from pyrogram.types import Message
 from typing import List
 from pyrogram.errors import UserNotParticipant
 
